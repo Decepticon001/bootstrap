@@ -39,6 +39,21 @@
   }
 }
 
+.dropright {
+  .dropdown-menu {
+    margin-top: -1px;
+  }
+
+  .dropdown-toggle {
+    &::after {
+      vertical-align: 0;
+      border-top: $caret-width solid transparent;
+      border-bottom: $caret-width solid transparent;
+      border-left: $caret-width solid;
+    }
+  }
+}
+
 // The dropdown menu
 .dropdown-menu {
   position: absolute;
